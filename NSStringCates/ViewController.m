@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSString+File.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *fileStr = [NSString readFileFromMainbundle:@"xmlStr.txt"];
+    NSLog(@"%@",fileStr);
 }
 
 - (void)didReceiveMemoryWarning

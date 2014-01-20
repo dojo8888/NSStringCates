@@ -19,8 +19,8 @@
 		443487B4188D1082001DF8F4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443487B3188D1082001DF8F4 /* XCTest.framework */; };
 		443487B5188D1082001DF8F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44348794188D1081001DF8F4 /* Foundation.framework */; };
 		443487B6188D1082001DF8F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44348798188D1081001DF8F4 /* UIKit.framework */; };
-		443487BE188D1082001DF8F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 443487BC188D1082001DF8F4 /* InfoPlist.strings */; };
-		443487C0188D1082001DF8F4 /* NSStringCatesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 443487BF188D1082001DF8F4 /* NSStringCatesTests.m */; };
+		443487CA188D1094001DF8F4 /* xmlStr.txt in Resources */ = {isa = PBXBuildFile; fileRef = 443487C9188D1094001DF8F4 /* xmlStr.txt */; };
+		443487CD188D10CF001DF8F4 /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = 443487CC188D10CF001DF8F4 /* NSString+File.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +50,9 @@
 		443487AC188D1082001DF8F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		443487B2188D1082001DF8F4 /* NSStringCatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSStringCatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		443487B3188D1082001DF8F4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		443487BB188D1082001DF8F4 /* NSStringCatesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSStringCatesTests-Info.plist"; sourceTree = "<group>"; };
-		443487BD188D1082001DF8F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		443487BF188D1082001DF8F4 /* NSStringCatesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringCatesTests.m; sourceTree = "<group>"; };
+		443487C9188D1094001DF8F4 /* xmlStr.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xmlStr.txt; sourceTree = "<group>"; };
+		443487CB188D10CF001DF8F4 /* NSString+File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+File.h"; sourceTree = "<group>"; };
+		443487CC188D10CF001DF8F4 /* NSString+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+File.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				4434879A188D1082001DF8F4 /* NSStringCates */,
-				443487B9188D1082001DF8F4 /* NSStringCatesTests */,
 				44348793188D1081001DF8F4 /* Frameworks */,
 				44348792188D1081001DF8F4 /* Products */,
 			);
@@ -117,6 +116,9 @@
 				443487A6188D1082001DF8F4 /* Main.storyboard */,
 				443487A9188D1082001DF8F4 /* ViewController.h */,
 				443487AA188D1082001DF8F4 /* ViewController.m */,
+				443487CB188D10CF001DF8F4 /* NSString+File.h */,
+				443487CC188D10CF001DF8F4 /* NSString+File.m */,
+				443487C9188D1094001DF8F4 /* xmlStr.txt */,
 				443487AC188D1082001DF8F4 /* Images.xcassets */,
 				4434879B188D1082001DF8F4 /* Supporting Files */,
 			);
@@ -130,24 +132,6 @@
 				4434879D188D1082001DF8F4 /* InfoPlist.strings */,
 				443487A0188D1082001DF8F4 /* main.m */,
 				443487A2188D1082001DF8F4 /* NSStringCates-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		443487B9188D1082001DF8F4 /* NSStringCatesTests */ = {
-			isa = PBXGroup;
-			children = (
-				443487BF188D1082001DF8F4 /* NSStringCatesTests.m */,
-				443487BA188D1082001DF8F4 /* Supporting Files */,
-			);
-			path = NSStringCatesTests;
-			sourceTree = "<group>";
-		};
-		443487BA188D1082001DF8F4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				443487BB188D1082001DF8F4 /* NSStringCatesTests-Info.plist */,
-				443487BC188D1082001DF8F4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -230,6 +214,7 @@
 			files = (
 				443487AD188D1082001DF8F4 /* Images.xcassets in Resources */,
 				4434879F188D1082001DF8F4 /* InfoPlist.strings in Resources */,
+				443487CA188D1094001DF8F4 /* xmlStr.txt in Resources */,
 				443487A8188D1082001DF8F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,7 +223,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				443487BE188D1082001DF8F4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				443487AB188D1082001DF8F4 /* ViewController.m in Sources */,
+				443487CD188D10CF001DF8F4 /* NSString+File.m in Sources */,
 				443487A5188D1082001DF8F4 /* AppDelegate.m in Sources */,
 				443487A1188D1082001DF8F4 /* main.m in Sources */,
 			);
@@ -259,7 +244,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				443487C0188D1082001DF8F4 /* NSStringCatesTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,14 +272,6 @@
 				443487A7188D1082001DF8F4 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		443487BC188D1082001DF8F4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				443487BD188D1082001DF8F4 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -381,6 +357,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSStringCates/NSStringCates-Prefix.pch";
 				INFOPLIST_FILE = "NSStringCates/NSStringCates-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,6 +371,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NSStringCates/NSStringCates-Prefix.pch";
 				INFOPLIST_FILE = "NSStringCates/NSStringCates-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -460,6 +438,7 @@
 				443487C5188D1082001DF8F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		443487C6188D1082001DF8F4 /* Build configuration list for PBXNativeTarget "NSStringCatesTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +447,7 @@
 				443487C8188D1082001DF8F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

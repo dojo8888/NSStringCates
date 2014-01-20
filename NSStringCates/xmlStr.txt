@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<channel>
+	<rsp>
+		<event><![CDATA[Y]]></event>
+		<event_key><![CDATA[65]]></event_key>
+		<happy><![CDATA[N]]></happy>
+		<notice><![CDATA[N]]></notice>
+		<notice_key><![CDATA[0]]></notice_key>
+		<mainEvent><![CDATA[Y]]></mainEvent>
+		<stampEvent><![CDATA[Y]]></stampEvent>
+		<gift><![CDATA[N]]></gift>
+		<gift_key><![CDATA[20131101]]></gift_key>
+	</rsp>
+	<version>
+		<android><![CDATA[3.8]]></android>
+		<ios><![CDATA[3.4]]></ios>
+	</version>
+	<eventContent>
+		<imgUrl><![CDATA[http://hostname/upfiles/appMain/201312/201312121507361.png]]></imgUrl>
+		<pathUrl><![CDATA[/front_v2/event/eventView.asp?eventSeq=62]]></pathUrl>
+		<gubun><![CDATA[E]]></gubun>
+		<seq><![CDATA[62]]></seq>
+	</eventContent>
+	<mainNotice><![CDATA[마이메뉴 리스트 테스트입니다.]]></mainNotice>
+
+
+
+
+	<mainLinkNotice>
+		<noticeContents><![CDATA[마이메뉴 리스트 테스트입니다.]]></noticeContents>
+		<noticeType><![CDATA[MYMENU]]></noticeType>
+
+		
+
+	</mainLinkNotice>
+</channel>
